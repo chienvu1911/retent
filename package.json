@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-   "start": "node server.js",
-   "server": "nodemon server.js"
+    "start": "node server.js",
+    "server": "nodemon server.js"
   },
   "repository": "https://github.com/chienvu1911/retent",
   "author": "chienvu94 <chienvv@massgenie.com>",
