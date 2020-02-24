@@ -60,15 +60,15 @@ const App = () => {
             <Switch>
                <Route path="/" exact component={Landing} />
                <AdminLayoutRoute path="/login" component={LoginPage} />
-               {/*
-               
-               <Route path="/signup" component={SignUpPage} />
+               <AdminLayoutRoute path="/signup" component={SignUpPage} />
                <PrivateRoute exact path="/blog" component={BlogPage} />
                <PrivateRoute
                   exact
                   path="/blog/post/create"
                   component={CreatePostPage}
                />
+               {/*
+               
                <PrivateRoute
                   exact
                   path="/blog/post/update/:id"

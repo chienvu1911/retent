@@ -15,13 +15,14 @@ const SignUp = ({ loading, user, onBlur, onChange, onSubmit }) => {
                      noValidate
                      onSubmit={onSubmit}
                      className="p-sm-3 p-xs-1"
+                     style={{boxShadow: "0 5px 15px rgba(0,0,0,.5)"}}  
                   >
                      <Card.Body>
                         <Card.Title
                            as="h3"
                            className="text-center mb-4 mt-2 theme-color"
                         >
-                           SignUp
+                           Create an account
                         </Card.Title>
                         <Input
                            name="user_name"
@@ -64,11 +65,12 @@ const SignUp = ({ loading, user, onBlur, onChange, onSubmit }) => {
                         />
                         <Button
                            variant="info"
+                           block
                            type="submit"
                            className="mt-4"
                            disabled={loading}
                         >
-                           Submit
+                           Sign Up
                         </Button>
                         <Card.Text className="mt-2">
                            Already have an account?{" "}

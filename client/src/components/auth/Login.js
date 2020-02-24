@@ -23,13 +23,14 @@ const Login = ({ message, loading, user, onChange, onBlur, onSubmit }) => {
                      noValidate
                      onSubmit={onSubmit}
                      className="p-sm-3 p-xs-1"
+                     style={{boxShadow: "0 5px 15px rgba(0,0,0,.5)"}}                     
                   >
                      <Card.Body>
                         <Card.Title
                            as="h3"
                            className="text-center theme-color mb-4 mt-2"
                         >
-                           Login
+                           Welcome to Retent
                         </Card.Title>
                         {message.length > 0 && (
                            <Alert variant="success">{message}</Alert>
@@ -62,16 +63,17 @@ const Login = ({ message, loading, user, onChange, onBlur, onSubmit }) => {
                         />
                         <Button
                            variant="info"
+                           block
                            type="submit"
                            className="mt-3"
                            disabled={loading}
                         >
-                           Submit
+                           Login
                         </Button>
 
                         <Card.Text className="mt-2">
                            Don't have an account?{" "}
-                           <Link to={"/signup"}>SignUp</Link>
+                           <Link to={"/signup"}>Sign Up</Link>
                         </Card.Text>
                      </Card.Body>
                   </Form>
