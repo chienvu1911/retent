@@ -18,7 +18,7 @@ export default function HeaderTop() {
           </div>
           <div className="col-12 col-lg-6 ml-auto d-flex">
             <div className="ml-md-auto top-social d-flex align-items-center">
-              <div className="p-3">
+              {/* <div className="p-3">
                 <i className="fab fa-facebook-f"></i>
               </div>
               <div className="p-3">
@@ -26,7 +26,7 @@ export default function HeaderTop() {
               </div>
               <div className="p-3">
                 <i className="fab fa-skype"></i>
-              </div>
+              </div> */}
             </div>
             <form action="#" className="search-form d-inline-block">
               <div className="d-flex">
@@ -35,9 +35,9 @@ export default function HeaderTop() {
                   className="form-control"
                   placeholder="Search..."
                 />
-                <button type="submit" className="btn btn-secondary">
+                {/* <button type="submit" className="btn btn-secondary">
                   <i class="fas fa-search"></i>
-                </button>
+                </button> */}
               </div>
             </form>
           </div>
@@ -49,7 +49,7 @@ export default function HeaderTop() {
           className="site-navbar py-2 js-sticky-header site-navbar-target d-none pl-0 d-lg-block"
           role="banner"
         >
-          <div className="container">
+          <div className="container p-0" style={{ borderTop: "1px solid #223458"}}>
             <div className="d-flex align-items-center">
               <div className="mr-auto">
                 <nav
@@ -59,42 +59,42 @@ export default function HeaderTop() {
                   <ul className="site-menu main-menu js-clone-nav mr-auto d-none pl-0 d-lg-block">
                     <li className="active">
                       <a href="index-2.html" className="nav-link text-left">
-                        Home
+                        Web
                       </a>
                     </li>
                     <li>
                       <a href="categories.html" className="nav-link text-left">
-                        Categories
+                        Mobile
                       </a>
                     </li>
                     <li>
                       <a href="categories.html" className="nav-link text-left">
-                        Politics
+                        Database
                       </a>
                     </li>
                     <li>
                       <a href="categories.html" className="nav-link text-left">
-                        Business
+                        Design Pattern
                       </a>
                     </li>
                     <li>
                       <a href="categories.html" className="nav-link text-left">
-                        Health
-                      </a>
-                    </li>
-                    <li>
-                      <a href="categories.html" className="nav-link text-left">
-                        Design
-                      </a>
-                    </li>
-                    <li>
-                      <a href="categories.html" className="nav-link text-left">
-                        Sport
+                        Programming
                       </a>
                     </li>
                     <li>
                       <a href="contact.html" className="nav-link text-left">
-                        Contact
+                        Server Side
+                      </a>
+                    </li>
+                    <li>
+                      <a href="categories.html" className="nav-link text-left">
+                        UI/UX
+                      </a>
+                    </li>
+                    <li>
+                      <a href="categories.html" className="nav-link text-left">
+                        English
                       </a>
                     </li>
                   </ul>

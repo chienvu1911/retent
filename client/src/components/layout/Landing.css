@@ -4,14 +4,16 @@ img {
 }
 
 .footer {
-  font-size: 0.85rem;
+  font-size: 1rem;
   text-align: center;
   padding: 2rem 0;
 }
+.header-top, .sticky-wrapper, .site-navbar {
+  background: #131c2f;
+}
 
 .header-top > .container {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 16px 0px 8px 0px;
 }
 
 .search-form .form-control {
@@ -24,7 +26,6 @@ img {
   background: #fff;
   border-bottom: 1px solid transparent;
   border-bottom: 1px solid #ccc;
-  box-shadow: 0px 0px 1px 1px #ccc
 }
 
 .search-form .btn {
@@ -37,8 +38,7 @@ img {
 
 .site-logo {
   font-size: 2rem;
-  color: #000 !important;
-  font-weight: bold;
+  color: #fff !important;
 }
 
 .sticky-wrapper .site-navbar .site-menu > li {
@@ -46,25 +46,20 @@ img {
 }
 
 .site-navbar .site-navigation .site-menu > li > a {
-  text-transform: uppercase;
-  font-size: 1rem;
-  letter-spacing: 0.05rem;
-  font-weight: 400;
-  display: inline-block;
-  text-decoration: none !important;
-  color: #000;
-  font-weight: bold;
+    display: block;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 14px;
+    text-transform: none;
+    color: #fff;
+    padding: 16px 0;
+    margin-right: 24px;
 }
 
 .site-navbar {
   margin-bottom: 0;
   z-index: 1999;
   width: 100%;
-  background: #fff;
-}
-.sticky-wrapper .site-navbar {
-  transition: 0.3s all ease;
-  border-bottom: 1px solid #efefef;
 }
 
 .site-navbar .site-navigation .site-menu {

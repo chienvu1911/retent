@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SubscribeNewsletter() {
   return (
-    <div className="site-section subscribe bg-light">
+    <div className="site-section subscribe bg-retent text-color-white">
       <div className="container">
         <form action="#" className="row align-items-center">
           <div className="col-md-5 mr-auto">
