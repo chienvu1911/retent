@@ -31,6 +31,26 @@ if (localStorage.jwtToken) {
    }
 }
 
+const AdminLayout = ({ children }) => (
+  <div className="login-layout">
+    {children}
+  </div>
+);
+
+
+const AdminLayoutRoute = ({ component: Component, ...rest }) => {
+   return (
+     <Route
+       {...rest}
+       render={matchProps => (
+         <AdminLayout>
+           <Component {...matchProps} />
+         </AdminLayout>
+       )}
+     />
+   );
+ };
+
 const App = () => {
    return (
       <Provider store={store}>
@@ -39,8 +59,9 @@ const App = () => {
             <Navbar /> */}
             <Switch>
                <Route path="/" exact component={Landing} />
-               {/* <Route path="/" exact component={Landing} />
-               <Route path="/login" component={LoginPage} />
+               <AdminLayoutRoute path="/login" component={LoginPage} />
+               {/*
+               
                <Route path="/signup" component={SignUpPage} />
                <PrivateRoute exact path="/blog" component={BlogPage} />
                <PrivateRoute

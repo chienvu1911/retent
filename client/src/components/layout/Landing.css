@@ -27,112 +27,134 @@ img {
 }
 
 .search-form .btn {
-    border-radius: 30px;
-    background: #000;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-color: #000;
+  border-radius: 30px;
+  background: #000;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-color: #000;
 }
 
 .site-logo {
-    font-size: 2rem;
-    color: #000 !important;
+  font-size: 2rem;
+  color: #000 !important;
 }
 
-.sticky-wrapper .site-navbar .site-menu>li {
-    display: inline-block;
+.sticky-wrapper .site-navbar .site-menu > li {
+  display: inline-block;
 }
 
-.site-navbar .site-navigation .site-menu>li>a {
-    text-transform: uppercase;
-    font-size: 1rem;
-    letter-spacing: .05rem;
-    font-weight: 400;
-    display: inline-block;
-    text-decoration: none!important;
-    color: #000;
+.site-navbar .site-navigation .site-menu > li > a {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  font-weight: 400;
+  display: inline-block;
+  text-decoration: none !important;
+  color: #000;
 }
 
 .site-navbar {
-    margin-bottom: 0;
-    z-index: 1999;
-    width: 100%;
-    background: #fff;
+  margin-bottom: 0;
+  z-index: 1999;
+  width: 100%;
+  background: #fff;
 }
 .sticky-wrapper .site-navbar {
-    transition: .3s all ease;
-    border-bottom: 1px solid #efefef;
+  transition: 0.3s all ease;
+  border-bottom: 1px solid #efefef;
 }
 
 .site-navbar .site-navigation .site-menu {
-    margin-left: 0;
-    padding-left: 0;
-    margin-bottom: 0;
+  margin-left: 0;
+  padding-left: 0;
+  margin-bottom: 0;
 }
 
-.site-navbar .site-navigation .site-menu>li:first-child>a {
-    padding-left: 0;
+.site-navbar .site-navigation .site-menu > li:first-child > a {
+  padding-left: 0;
 }
 
 .sticky-wrapper .shrink {
-    padding-top: 10px!important;
-    padding-bottom: 10px!important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
 }
 
 @media (min-width: 768px) {
-    .site-section {
-        padding: 7em 0;
-    }
+  .site-section {
+    padding: 7em 0;
+  }
 }
 
 .section-title {
-    color: #000;
-    margin-bottom: 50px;
+  color: #000;
+  margin-bottom: 50px;
 }
 
 .section-title h2 {
-    font-size: 20px;
-    font-weight: 400;
-    border-bottom: 1px solid #222;
-    position: relative;
-    display: inline-block;
+  font-size: 20px;
+  font-weight: 400;
+  border-bottom: 1px solid #222;
+  position: relative;
+  display: inline-block;
 }
 
 .section-title h2:before {
-    position: absolute;
-    content: "";
-    height: 1px;
-    background: #777;
+  position: absolute;
+  content: "";
+  height: 1px;
+  background: #777;
 }
 .trend-entry {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 .trend-entry .number {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 50px;
-    flex: 0 0 50px;
-    font-size: 30px;
-    line-height: 1;
-    color: #ccc;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50px;
+  flex: 0 0 50px;
+  font-size: 30px;
+  line-height: 1;
+  color: #ccc;
 }
 
 .trend-entry .trend-contents h2 {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .trend-entry .trend-contents h2 a {
-    color: #000;
+  color: #000;
 }
 
 .date-read {
-    color: #b4b4b4;
+  color: #b4b4b4;
 }
 
-.post-entry-1, .post-entry-2 {
-    font-size: .9rem;
-    margin-bottom: 30px;
+.post-entry-1,
+.post-entry-2 {
+  font-size: 0.9rem;
+  margin-bottom: 30px;
 }
 
-.post-entry-1 h2, .post-entry-2 h2 {
-    font-size: 20px;
+.post-entry-1 h2,
+.post-entry-2 h2 {
+  font-size: 20px;
+}
+
+.subscribe form .form-control {
+  margin-right: 10px;
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 30px;
+  border: none;
+  background: #fff;
+  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid #ccc;
+}
+
+.subscribe form .btn {
+  border-radius: 30px;
+  background: #000;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-color: #000;
 }
