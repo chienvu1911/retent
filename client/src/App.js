@@ -35,10 +35,11 @@ const App = () => {
    return (
       <Provider store={store}>
          <BrowserRouter>
-            <ProgressBar />
-            <Navbar />
+            {/* <ProgressBar />
+            <Navbar /> */}
             <Switch>
                <Route path="/" exact component={Landing} />
+               {/* <Route path="/" exact component={Landing} />
                <Route path="/login" component={LoginPage} />
                <Route path="/signup" component={SignUpPage} />
                <PrivateRoute exact path="/blog" component={BlogPage} />
@@ -54,7 +55,7 @@ const App = () => {
                />
                <Route exact path="/blog/post/:id" component={ViewPostPage} />
                <Route path="/blog/:author" component={BlogPage} />
-               <Redirect from="*" to="/" />
+               <Redirect from="*" to="/" /> */}
             </Switch>
          </BrowserRouter>
       </Provider>
