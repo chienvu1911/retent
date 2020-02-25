@@ -1,12 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
+import Creatable, { makeCreatableSelect } from 'react-select/creatable';
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import Input from "../form/Input";
-import Textarea from "../form/Textarea";
 import { Editor } from "@tinymce/tinymce-react";
 
+const options = [
+  { value: "chocolate", label: "Chocolate" },
+  { value: "strawberry", label: "Strawberry" },
+  { value: "vanilla", label: "Vanilla" }
+];
+
 const PostForm = ({ post, onChange, onBlur, loading, onSubmit }) => {
-  const { title, body, errors } = post;
+  const [selectedOption, setSelectedOption] = useState(null);
+  const { title, errors } = post;
+
+  const handleChange = selectedOption => {
+    setSelectedOption(
+      selectedOption
+    );
+  };
+
   return (
     <Container>
       <Row>
@@ -25,6 +39,8 @@ const PostForm = ({ post, onChange, onBlur, loading, onSubmit }) => {
                 error: errors.title
               }}
             />
+            
+            <p></p>
             <Editor
               initialValue="<p>This is the initial content of the editor</p>"
               init={{
@@ -39,7 +55,14 @@ const PostForm = ({ post, onChange, onBlur, loading, onSubmit }) => {
                   "undo redo | formatselect | bold italic backcolor | \
                   alignleft aligncenter alignright alignjustify | \
                   bullist numlist outdent indent | removeformat | help"
-                  }}
+              }}
+            />
+            <Form.Label>Tags</Form.Label>
+            <Creatable
+              isMulti 
+              value={selectedOption}
+              onChange={handleChange}
+              options={options}
             />
             <Button
               variant="outline-info"
