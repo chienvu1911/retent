@@ -44,7 +44,7 @@ export default function HeaderTop() {
           <div className="col-6 d-block d-lg-none text-right"></div>
         </div>
       </div>
-      <div id="sticky-wrapper" class="sticky-wrapper">
+      <div id="sticky-wrapper" className="sticky-wrapper">
         <div
           className="site-navbar py-2 js-sticky-header site-navbar-target d-none pl-0 d-lg-block"
           role="banner"
